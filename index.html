@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Portifólio</title>
+
+    <meta name="description" content="Meu portifólio">
+    <meta name="author" content="Leandro">
+
+    <!-- Bootstrap 5.3 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <!-- Font Awesome 4.7.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">   
+    <!-- Animate.css 4.1.1 -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- Lightbox 2.11.4 -->
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        body {
+            overflow-x: hidden; /* Evita que o site inteiro tenha um overflow horizontalmente */
+        }
+        .container-fluid {
+            max-width: 100%; /* Ensure fluid container doesn't exceed viewport */
+        }
+        .navbar-nav {
+            flex-wrap: wrap; /* Ensure nav items wrap within viewport */
+        }
+        .row {
+            margin-right: 0; /* Prevent extra space on the right */
+            margin-left: 0; /* Prevent extra space on the left */
+        }
+        #banner-place {
+            background-image: url('images/banner-universe.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .profile-column {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding-right: 20px; /* Adjust as necessary */
+            border-right: 1px solid #ccc; /* Vertical line for desktops */
+            margin-top: 20px; /* Adjust top margin */
+        }
+        @media (max-width: 768px) {
+            .profile-column {
+                padding-left: 20px;
+                border-right: none; /* Remove vertical line for smaller screens */
+                border-bottom: 1px solid #ccc; /* Horizontal line for tablets and phones */
+                margin-top: 0; /* Reset top margin */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">
+            <!-- <img src="icons/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"> -->
+            Portifólio
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Sobre</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#projetos">Projetos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#habilidades">Habilidades</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li> 
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="home">
+
+    <div class="p-5 mb-4 bg-body-tertiary" id="banner-place">
+
+        <div class="container-fluid">
+          <h1 class="animate__animated animate__bounce display-5 fw-bold text-white">Bem Vindo ao Meu Portifólio</h1>
+          <p class="col-md-8 fs-4 text-white">Espero que goste dos meus projetos.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="sobre">
+
+    <div class="row">
+
+        <div class="section-title">
+            <h2>Sobre Eu</h2>
+            <p>Uma breve descrição sobre mim mesmo.</p>
+        </div>
+
+        <!-- Coluna da imagem de perfil -->
+
+        <div class="col-md-6 profile-column">
+            <img src="images/author.png" alt="Logo" class="img-fluid rounded-circle border border-gray mb-4" style="border-width: 10px;">
+        </div>
+
+        <!-- Coluna de descrição sobre mim mesmo -->
+        <div class="col-md-6">
+            <div class="p-4 mb-4" id="home">
+                <div class="container-fluid">
+                  <p class="fs-5">Meu nome é Leandro de Oliveira Cândido, sou um estudante do ensino médio no Instituto Federal do Ceará, atualmente estou no 4° Semestre do Curso Integrado de Informática</p>
+
+                  <br>
+
+                  <p class="fs-5">Meus hobbies são: ler mangá, jogar Genshin Impact, traduzir textos de outras línguas para inglês, jogar jogos retrô, desenvolver websites usando Jekyll, e otimizar o meu "trabalho" com scripts caseiros que eu publico no Github como uma forma de preservar o meu código e contribuir para a vida de alguém de alguma forma ou outra</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projetos">
+
+    <div class="row mt-lg-4 ml-3 mb-4">
+
+        <div class="section-title">
+            <h2>Projetos</h2>
+            <p>Alguns dos meus melhores projetos até o momento.</p>
+        </div>
+
+        <div class="col-sm-4 mb-4 mb-sm-0" style="width: 25rem;">
+          <div class="card">
+            <a href="https://raw.githubusercontent.com/marshfellow42/Projeto_POO_Swing/main/UI/App%20Principal/v1.2.0.png" data-lightbox="projects" data-title="Aplicativo de clima">
+                <img src="https://raw.githubusercontent.com/marshfellow42/Projeto_POO_Swing/main/UI/App%20Principal/v1.2.0.png" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Aplicativo de clima</h5>
+              <p class="card-text">Um aplicativo de clima feito usando Java Swing. Utilizando a API do OpenWeatherMap, entre outras APIs que permitem uma experiência fluida. </p>
+              <a href="https://github.com/marshfellow42/Projeto_POO_Swing" class="btn btn-primary">Link do GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 mb-4">
+          <div class="card">
+            <a href="images/sh1-calc-screenshot.png" data-lightbox="projects" data-title="Calculadora para o jogo Silent Hill 1">
+                <img src="images/sh1-calc-screenshot.png" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Calculadora para o rank final do jogo Silent Hill 1</h5>
+              <p class="card-text">Uma calculadora feita usando Java Swing que serve para calcular o rank final do jogo para saber se você conseguiu o rank necessário para 10 estrelas onde você consegue uma arma poderosa.</p>
+              <a href="https://github.com/marshfellow42/SH1-Final-Score-Calculator" class="btn btn-primary">Link do GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="card">
+                <a href="images/jogo-de-casino-screenshot.png" data-lightbox="projects" data-title="Jogo de Casino">
+                    <img src="images/jogo-de-casino-screenshot.png" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Jogo de Casino</h5>
+                    <p class="card-text">Meu primeiro projeto "sério" em um jogo feito em Python, baseado em texto com vários finais engraçados e levemente controvérsios.</p>
+                    <a href="https://github.com/marshfellow42/Jogo-de-Casino" class="btn btn-primary">Link do GitHub</a>
+                </div>
+            </div>
+        </div>
+
+      </div>
+</section>
+
+<section id="habilidades" class="mb-4">
+
+    <div class="row">
+
+        <div class="section-title">
+            <h2>Habilidades</h2>
+            <p>Essas são as minhas habilidades atuais.</p>
+        </div>
+
+        <div class="col-lg-4">
+
+            <div class="progress-container">
+                <span class="progress-label">HTML</span>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-success" style="width: 75%;">75%</div>
+                </div>
+            </div>
+            
+            <br>
+
+            <div class="progress-container">
+                <span class="progress-label">CSS</span>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-danger" style="width: 10%;">10%</div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="progress-container">
+                <span class="progress-label">Bootstrap CSS</span>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-success" style="width: 60%;">60%</div>
+                </div>
+            </div>
+
+            <!-- Only apply a break on small displays and below -->
+
+            <div class="d-block d-md-none"><br></div>
+
+        </div>
+
+        <div class="col-lg-4">
+
+            <div class="progress-container">
+                <span class="progress-label">PHP</span>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-warning" style="width: 25%;">25%</div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="progress-container">
+                <span class="progress-label">JavaScript</span>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-danger" style="width: 5%;">5%</div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="progress-container">
+                <span class="progress-label">Python</span>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-warning" style="width: 45%;">45%</div>
+                </div>
+            </div>
+
+            <div class="d-block d-md-none"><br></div>
+
+        </div>
+
+        <div class="col-lg-4">
+
+            <div class="progress-container">
+                <span class="progress-label">Java</span>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-success" style="width: 50%;">50%</div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="progress-container">
+                <span class="progress-label">SQL</span>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-warning" style="width: 40%;">40%</div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="progress-container">
+                <span class="progress-label">Git</span>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-success" style="width: 60%;">60%</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<section id="contato">
+
+    <form class="row g-3 needs-validation" novalidate>
+
+        <div class="section-title">
+            <h2>Contato</h2>
+            <p>Caso queria mandar uma mensagem para mim, preencha esse formulário.</p>
+        </div>
+
+        <div class="col-lg-5 col-md-8">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Nome" required>
+                <div class="valid-feedback">
+                    Parece ótimo!
+                </div>
+                <div class="invalid-feedback">
+                    Por favor, escolha um nome.
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                <div class="valid-feedback">
+                    Parece ótimo!
+                </div>
+                <div class="invalid-feedback">
+                    Por favor, escolha um email.
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Telefone" required data-mask="(00) 00000-0000">
+                <div class="valid-feedback">
+                    Parece ótimo!
+                </div>
+                <div class="invalid-feedback">
+                    Por favor, digite seu telefone completo.
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" required>
+                <div class="valid-feedback">
+                    Parece ótimo!
+                </div>
+                <div class="invalid-feedback">
+                    Por favor, escolha um assunto.
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Mensagem" required></textarea>
+                <div class="valid-feedback">
+                    Parece ótimo!
+                </div>
+                <div class="invalid-feedback">
+                    Por favor, escolha uma mensagem.
+                </div>
+              </div>
+              <br>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+
+        <script>
+            (() => {
+                'use strict'
+        
+                // Function to validate the phone number against the mask
+                const validatePhoneNumber = (input) => {
+                    const maskPattern = /^\(\d{2}\) \d{5}-\d{4}$/;
+                    return maskPattern.test(input.value);
+                };
+        
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                const forms = document.querySelectorAll('.needs-validation');
+        
+                // Loop over them and prevent submission
+                Array.from(forms).forEach(form => {
+                    form.addEventListener('submit', event => {
+                        let formIsValid = true;
+        
+                        // Check each input in the form
+                        Array.from(form.elements).forEach(element => {
+                            if (element.hasAttribute('required')) {
+                                if (!element.checkValidity()) {
+                                    formIsValid = false;
+                                }
+        
+                                // If the element has a data-mask attribute, perform additional validation
+                                if (element.hasAttribute('data-mask')) {
+                                    if (!validatePhoneNumber(element)) {
+                                        formIsValid = false;
+                                        element.classList.add('is-invalid');
+                                        element.classList.remove('is-valid');
+                                    } else {
+                                        element.classList.add('is-valid');
+                                        element.classList.remove('is-invalid');
+                                    }
+                                }
+                            }
+                        });
+        
+                        if (!formIsValid) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+        
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+        
+                // Add input event listener for masked input fields to handle validation as the user types
+                const maskedInputs = document.querySelectorAll('input[data-mask]');
+                Array.from(maskedInputs).forEach(input => {
+                    input.addEventListener('input', () => {
+                        if (validatePhoneNumber(input)) {
+                            input.classList.add('is-valid');
+                            input.classList.remove('is-invalid');
+                        } else {
+                            input.classList.remove('is-valid');
+                            input.classList.add('is-invalid');
+                        }
+                    });
+                });
+            })();
+        </script>
+      </form>
+
+</section>
+
+<section id="rodape">
+
+    <div class="p-3 mt-4 bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-center">
+                <a href="#home" class="bg-primary-emphasis">Início</a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="https://github.com/marshfellow42" style="color: black;">
+                    <i class="fa fa-github"></i>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- JQuery 3.7.1 -->
+<script src="js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap 5.3 -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- Lightbox 2.11.4 -->
+<script src="js/lightbox.min.js">
+    lightbox.option({
+      'wrapAround': true
+    })
+</script>
+<!-- JQuery Mask -->
+<script src="js/jquery.mask.min.js"></script>
+<!-- Custom JS -->
+<script src="js/scripts.js"></script>
+</body>
+</html>
