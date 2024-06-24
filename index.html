@@ -29,19 +29,19 @@
             max-width: 100%; /* Ensure fluid container doesn't exceed viewport */
         }
         .navbar-nav {
-            flex-wrap: wrap; /* Ensure nav items wrap within viewport */
+            flex-wrap: wrap; /* Evita que a navbar exceda a janela de exibição */
         }
         .row {
-            margin-right: 0; /* Prevent extra space on the right */
-            margin-left: 0; /* Prevent extra space on the left */
+            margin-right: 0; /* Previne espaço extra para a direita */
+            margin-left: 0; /* Previne espaço extra para a esquerda */
         }
-        #banner-place {
-            background-image: url('images/banner-universe.jpg'); /* Replace with your image path */
+        #banner-place { /* Todo o CSS do banner de introdução */
+            background-image: url('images/banner-universe.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
         }
-        .profile-column {
+        .profile-column { /* Preparação do espaço para a linha vertical que divide a coluna da foto do perfil com a descrição sobre mim mesmo */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -50,12 +50,12 @@
             border-right: 1px solid #ccc; /* Vertical line for desktops */
             margin-top: 20px; /* Adjust top margin */
         }
-        @media (max-width: 768px) {
+        @media (max-width: 768px) { /* Mesma coisa de cima só que para displays de celular, onde a linha é horizontal e fica embaixo da imagem ao invés do lado. Eu pensei em tirar essa linha mas eu não tenho certeza ainda */
             .profile-column {
                 padding-left: 20px;
-                border-right: none; /* Remove vertical line for smaller screens */
-                border-bottom: 1px solid #ccc; /* Horizontal line for tablets and phones */
-                margin-top: 0; /* Reset top margin */
+                border-right: none; /* Remove a linha vertical para displays de celular */
+                border-bottom: 1px solid #ccc; /* O espaço da linha horizontal */
+                margin-top: 0; /* Reseta a margem de cima */
             }
         }
     </style>
@@ -76,6 +76,8 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <!-- O espaço da Navbar -->
 
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
@@ -104,6 +106,8 @@
     </div>
 </nav>
 
+
+<!-- Início da seção do banner de introdução (ou só "Home") -->
 <section id="home">
 
     <div class="p-5 mb-4 bg-body-tertiary" id="banner-place">
@@ -116,7 +120,9 @@
     </div>
 
 </section>
+<!-- Fim da seção do banner de introdução (ou só "Home") -->
 
+<!-- Início da seção sobre mim mesmo -->
 <section id="sobre">
 
     <div class="row">
@@ -140,13 +146,15 @@
 
                   <br>
 
-                  <p class="fs-5">Meus hobbies são: ler mangá, jogar Genshin Impact, traduzir textos de outras línguas para inglês, jogar jogos retrô, desenvolver websites usando Jekyll, e otimizar o meu "trabalho" com scripts caseiros que eu publico no Github como uma forma de preservar o meu código e contribuir para a vida de alguém de alguma forma ou outra</p>
+                  <p class="fs-5">Meus hobbies são: ler mangá, jogar Genshin Impact, traduzir textos de outras línguas para inglês, jogar jogos retrô, desenvolver websites usando Jekyll, e otimizar o meu "trabalho" com scripts caseiros que eu publico no Github como uma forma de preservar o meu código e contribuir para a vida de alguém de uma forma ou de outra</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<!-- Fim da seção sobre mim mesmo -->
 
+<!-- Início da seção sobre os meus melhores projetos -->
 <section id="projetos">
 
     <div class="row mt-lg-4 ml-3 mb-4">
@@ -156,6 +164,7 @@
             <p>Alguns dos meus melhores projetos até o momento.</p>
         </div>
 
+        <!-- Todos os cards com os meus melhores projetos (eu tenho mais projetos no meu perfil, mas esses são os melhores que eu posso apresentar ao público, ou seja, aqueles que eu tive que colocar um pouco mais de esforço do que o normal)-->
         <div class="col-sm-4 mb-4 mb-sm-0" style="width: 25rem;">
           <div class="card">
             <a href="https://raw.githubusercontent.com/marshfellow42/Projeto_POO_Swing/main/UI/App%20Principal/v1.2.0.png" data-lightbox="projects" data-title="Aplicativo de clima">
@@ -163,7 +172,7 @@
             </a>
             <div class="card-body">
               <h5 class="card-title">Aplicativo de clima</h5>
-              <p class="card-text">Um aplicativo de clima feito usando Java Swing. Utilizando a API do OpenWeatherMap, entre outras APIs que permitem uma experiência fluida. </p>
+              <p class="card-text">Um aplicativo de clima feito usando Java Swing. Utilizando a API do OpenWeatherMap, entre outras APIs que permitem uma experiência fluida.</p>
               <a href="https://github.com/marshfellow42/Projeto_POO_Swing" class="btn btn-primary">Link do GitHub</a>
             </div>
           </div>
@@ -197,7 +206,9 @@
 
       </div>
 </section>
+<!-- Fim da seção sobre os meus melhores projetos -->
 
+<!-- Início da seção sobre as minhas habilidades -->
 <section id="habilidades" class="mb-4">
 
     <div class="row">
@@ -207,9 +218,11 @@
             <p>Essas são as minhas habilidades atuais.</p>
         </div>
 
+        <!-- Todas as barras de progresso com as minhas habilidades atuais (elas não refletem o meu nível de experiência em cada habilidade pois eu não consigo quantificar algo que eu preciso aprender todos os dias. Mesmo que fosse 1% por dia, daqui a 50 anos, eu ainda estaria aprendendo no ritimo de 1% ao dia, pois não tem uma linha de chegada por si só)-->
         <div class="col-lg-4">
 
             <div class="progress-container">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="22px" class="pb-2"/>
                 <span class="progress-label">HTML</span>
                 <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar bg-success" style="width: 75%;">75%</div>
@@ -219,6 +232,7 @@
             <br>
 
             <div class="progress-container">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="22px" class="pb-2"/>
                 <span class="progress-label">CSS</span>
                 <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar bg-danger" style="width: 10%;">10%</div>
@@ -228,6 +242,7 @@
             <br>
 
             <div class="progress-container">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" width="22px" class="pb-2"/>
                 <span class="progress-label">Bootstrap CSS</span>
                 <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar bg-success" style="width: 60%;">60%</div>
@@ -243,6 +258,8 @@
         <div class="col-lg-4">
 
             <div class="progress-container">
+
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" width="22px" class="pb-2"/>
                 <span class="progress-label">PHP</span>
                 <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar bg-warning" style="width: 25%;">25%</div>
@@ -252,6 +269,7 @@
             <br>
 
             <div class="progress-container">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="22px" class="pb-2"/>
                 <span class="progress-label">JavaScript</span>
                 <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar bg-danger" style="width: 5%;">5%</div>
@@ -261,6 +279,8 @@
             <br>
 
             <div class="progress-container">
+
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="22px" class="pb-2"/>
                 <span class="progress-label">Python</span>
                 <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar bg-warning" style="width: 45%;">45%</div>
@@ -274,6 +294,7 @@
         <div class="col-lg-4">
 
             <div class="progress-container">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="22px" class="pb-2"/>        
                 <span class="progress-label">Java</span>
                 <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar bg-success" style="width: 50%;">50%</div>
@@ -283,6 +304,7 @@
             <br>
 
             <div class="progress-container">
+                <i class="fa fa-database" aria-hidden="true" width="22px" class="pb-2"></i>
                 <span class="progress-label">SQL</span>
                 <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar bg-warning" style="width: 40%;">40%</div>
@@ -292,6 +314,8 @@
             <br>
 
             <div class="progress-container">
+
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="22px" class="pb-2"/>
                 <span class="progress-label">Git</span>
                 <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar bg-success" style="width: 60%;">60%</div>
@@ -302,7 +326,9 @@
     </div>
 
 </section>
+<!-- Fim da seção sobre as minhas habilidades -->
 
+<!-- Início da seção para o meu contato (que não tá funcional ainda sem o PHP) -->
 <section id="contato">
 
     <form class="row g-3 needs-validation" novalidate>
@@ -312,6 +338,7 @@
             <p>Caso queria mandar uma mensagem para mim, preencha esse formulário.</p>
         </div>
 
+        <!-- A coluna com todos os inputs (eu pensei que ficou um pouco feio com uma coluna inteira vazia, mas eu penso no que eu posso colocar depois)-->
         <div class="col-lg-5 col-md-8">
               <div class="form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Nome" required>
@@ -362,6 +389,7 @@
               <button type="submit" class="btn btn-primary">Enviar</button>
         </div>
 
+        <!-- O script que checa se todos os inputs tem algo digitado (ainda tá cheio de bugs, pois ele checa logo quando o usuário digita uma letra só, ao invés de checar só no final do input, eu resolvo isso mais tarde) -->
         <script>
             (() => {
                 'use strict'
@@ -428,7 +456,9 @@
       </form>
 
 </section>
+<!-- Fim da seção para o meu contato (que não tá funcional ainda sem o PHP) -->
 
+<!-- Início da seção do rodapé -->
 <section id="rodape">
 
     <div class="p-3 mt-4 bg-body-tertiary">
@@ -436,6 +466,7 @@
             <div class="d-flex justify-content-center">
                 <a href="#home" class="bg-primary-emphasis">Início</a>
                 &nbsp;&nbsp;&nbsp;
+                <!-- A cor preta é para deixar o link com a cor preta que nem a cor do GitHub em si, já que natural o "a" é um azul claro  -->
                 <a href="https://github.com/marshfellow42" style="color: black;">
                     <i class="fa fa-github"></i>
                 </a>
@@ -445,6 +476,7 @@
     </div>
 
 </section>
+<!-- Fim da seção do rodapé -->
 
 <!-- JQuery 3.7.1 -->
 <script src="js/jquery-3.7.1.min.js"></script>
